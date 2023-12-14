@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Dorm Care</title>
+    <link rel="stylesheet" href="src/main/resources/static/styles/login.css">
+    <script src="scripts/login.js"></script>
+</head>
+<body>
+    <div class="login-main">
+        <div class="left">
+            <p>Cleanliness <br>Speaks <br> Comfort</p>
+        </div>
+        <div class="right">
+            <h1>Enter your college mail <br>
+                to sign in</h1>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="off">
+                    <!-- <button type="button" class="submit-button" id="getotp" onclick="showOtpInput()">Get OTP</button>
+                    <input type="text" name="otp" id="otp" style="display: none;" placeholder="Enter OTP"> -->
+                    <button type="button" class="signin-button" id="signin-button"  onclick="signin()">Sign In</button>
+                </div> 
+        </div>
+    </div>
+    <div id="modalOverlay" class="modal-overlay">
+        <!-- The modal content -->
+        <div class="modal-content">
+            <span onclick="closeModal()" style="cursor: pointer; float: right;">&times;</span>
+            <h2>Invalid Email Domain</h2><br>
+            <p>Please Enter College Email ID.</p>
+        </div>
+    </div>
+</body>
+</html>
