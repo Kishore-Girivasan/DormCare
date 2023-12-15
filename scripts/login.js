@@ -17,6 +17,22 @@ function signin(){
   const email = document.getElementById('email').value;
   if(validate_email(email)){
     console.log("valid");
+    fetch('http://localhost:8080/receive-data', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      credentials: 'include', // Add this line
+      body: JSON.stringify({ email }),
+  })
+  .then(response => response.json())
+  .then(responseData => {
+      alert(responseData.message); // Display the response from the server
+  })
+  .catch(error => {
+      console.error('Error sending data:', error);
+  });
+  
   }
   else{
     openModal();
@@ -43,21 +59,9 @@ window.onclick = function(event) {
   }
 };
 
+// const email = document.getElementById('email').value;
 
-fetch('http://localhost:8080/receive-data', {
-  method: 'POST',
-  headers: {
-      'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({ data }),
-})
-.then(response => response.json())
-.then(responseData => {
-  alert(responseData.message); // Display the response from the server
-})
-.catch(error => {
-  console.error('Error sending data:', error);
-});
+
       
 
 

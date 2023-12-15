@@ -34,45 +34,30 @@
     margin-left: 50px;
     margin-top: 150px;
 }
-
-@media screen and (max-width: 360px) {
-    *{
-        margin-left: -10px;
-        height: fit-content;
-    }
-    .main{
-        font-size: 20px;
-        margin-top: 50px;
-    }
-    .loginbutton{
-        margin-left: -700px;
-    }
-}
-
+/* Media query for tablets */
 @media screen and (max-width: 768px) {
-    *{
-        margin-left: -10px;
-        height: fit-content;
+    .button {
+        margin-left: 10px;
     }
-    .main{
-        font-size: 20px;
-        margin-top: 70px;
-    }
-    .loginbutton{
-        margin-left: -630px;
+
+    .main {
+        margin-left: 20px;
     }
 }
 
-@media screen and (max-width: 460px) {
-    *{
-        margin-left: -10px;
-        height: fit-content;
+/* Media query for mobile devices */
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
     }
-    .main{
+
+    .button {
+        margin-left: 10px;
+    }
+
+    .main {
+        margin-left: 20px;
         font-size: 20px;
-        margin-top: 70px;
-    }
-    .loginbutton{
-        margin-left: -700px;
     }
 }
