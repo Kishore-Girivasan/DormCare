@@ -1,23 +1,23 @@
 package com.example.DormCare.controller;
-
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-import com.example.DormCare.model.ApiResponse;
-import com.example.DormCare.model.RequestData;
+import com.example.DormCare.user.User;
 
-@RestController
-@RequestMapping("/api")
+@Controller
 public class DataController {
-    @PostMapping("/receive-data")
+    @GetMapping("/")
+    public String login(){
 
-    public ApiResponse receivedata(@RequestBody RequestData requestdata){
-        String data = requestdata.getData();
-        System.out.print(data);
-        return new ApiResponse("Data received successfully!");
+        return "login";
     }
-    
 
+    @PostMapping("/register")
+    public String email_registration( @ModelAttribute() User user){
+        System.out.println("Received request for email registration");
+        System.out.println(user.toString());
+        return "login";
+    }
 }
