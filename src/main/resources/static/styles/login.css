@@ -1,14 +1,27 @@
-*{
+* {
   margin: 0px;
 }
-.login-main{
+.navbar {
+  display: flex;
+  background-color: #34495e;
+  height: 50px;
+}
+
+.navbar h1 {
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #ecf0f1;
+  font-size: 1.2em; /* Adjusted font size for responsiveness */
+}
+.login-main {
   display: flex;
 }
 
-.left{
-  background-color: black;
+.left {
+  background-color: #34495e;
 }
-.left p{
+
+.left p {
   font-weight: bold;
   font-size: 80px;
   margin-left: 100px;
@@ -18,35 +31,32 @@
   color: #ffffff;
 }
 
-/* .right{
-
-} */
-
-.right h1{
+.right h1 {
   font-size: 40px;
   font-weight: lighter;
   margin-top: 180px;
   margin-left: 100px;
+  color: #34495e;
 }
 
-.input-box{
+.input-box {
   display: flex;
   flex-direction: column;
   margin-left: 100px;
   margin-top: 30px;
 }
 
-input{
+input {
   height: 30px;
   margin-bottom: 10px;
 }
 
-button{
+button {
   height: 40px;
   margin-top: 10px;
-  border-style:solid;
+  border-style: solid;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #34495e;
   border-width: 1px;
   border-radius: 5px;
 }
@@ -63,10 +73,50 @@ button{
   align-items: center;
 }
 
-/* Style for the modal content */
 .modal-content {
   background-color: #fff;
   padding: 30px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Media Queries for Tablet */
+@media screen and (max-width: 768px) {
+  .login-main {
+    flex-direction: column;
+  }
+
+  .left p {
+    font-size: 60px;
+    margin: 50px 20px;
+  }
+
+  .right h1 {
+    font-size: 30px;
+    margin: 20px;
+  }
+
+  .input-box,
+  input,
+  button {
+    width: 300px;
+    margin-left: 40px;
+    margin-right: 20px;
+  }
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 480px) {
+  .left p {
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+    height: 230px;
+  }
+
+  .right h1 {
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+  }
 }

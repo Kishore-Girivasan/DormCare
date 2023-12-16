@@ -14,12 +14,7 @@ public class DataController {
     public String login(){
         return "login";
     }
-    // @PostMapping("/register")
-    // public String registration(@ModelAttribute("email") User user ){
-    //     System.out.println(user.toString());
-    //     System.out.println("s");
-    //     return "login";
-    // }
+    
     @PostMapping("/register")
     public String registration(@ModelAttribute User user) {
         System.out.println("Email: " + user.getEmail());
