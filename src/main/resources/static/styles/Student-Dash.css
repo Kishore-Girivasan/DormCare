@@ -1,0 +1,88 @@
+*{
+  padding: 10px;
+  margin: 0px;
+}
+#heading{
+  display: flex;
+  margin-top: 15px;
+}
+#title{
+  margin-left: 50px;
+}
+#Number{
+  margin-left: 62%;
+  font-size: 23px;
+}
+#profile{
+  font-size: 23px;
+}
+#service-middle{
+  font-size: 23px;
+  margin-left: 59px;
+  margin-top: 20px;
+}
+#Box-container{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.Boxes {
+  border-style: outset;
+  border-width: 2px;
+  border-color: black;
+  height: 130px;
+  width: 160px;
+  margin-left: 55px;
+  line-height: 200%;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.Boxes.green {
+  border-color: red;
+}
+
+.img-size {
+  width: 90px;
+  height: 70px;
+  transform: translate(0px, 4px);
+  margin-bottom: 10px; /* Add space between image and text */
+}
+
+.room-cleaning {
+  font-size: 16px; /* Adjust font size as needed */
+  font-weight: bold; /* Make text stand out */
+  color: black;
+  text-align: center;
+}
+#Review-box{
+  display: none;
+}
+
+#Suggestion{
+  font-size: 23px;
+  margin-left: 59px;
+  display: none;
+}
+#Suggestion-box{
+  border-style: outset;
+  border-width: 2px;
+  border-color: black;
+  height: 120px;
+  width: 320px;
+  margin-left: 60px;
+  line-height: 10%;
+
+}
+#Review-button{
+  margin-top: 20px;
+  margin-left: 60px;
+  width: 347px;
+  height: 45px;
+  color: aliceblue;
+  margin-top: 10px;
+  background-color: black;
+  transform: translate(-410px, 120px);
+}

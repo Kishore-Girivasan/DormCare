@@ -12,7 +12,32 @@
   // const app = initializeApp(firebaseConfig);
   // const analytics = getAnalytics(app);
 
+//   function input(){
+//     // Get references to the elements
+//     var emailInput = document.getElementById('email');
+//     var getOtpButton = document.getElementById('getotp');
+//     var otpInput = document.getElementById('otp');
+//     var signinButton = document.getElementById('signin-button');
 
+//     // Check if the email is entered
+//     if (emailInput.value.trim() !== '') {
+//         // Hide email input and get OTP button
+//         emailInput.style.display = 'none';
+//         getOtpButton.style.display = 'none';
+
+//         // Show OTP input and submit button
+//         otpInput.style.display = 'inline-block'; // or 'block' depending on your styling
+//         signinButton.style.display = 'inline-block'; // or 'block' depending on your styling
+//     } else {
+//         // Show an alert or handle the case where email is not entered
+//         alert('Please enter your email first.');
+//     }
+// }
+function showOtpInput() {
+  document.getElementById("otp").style.display = "block";
+  document.getElementById("getotp").style.display = "none";
+  document.getElementById("signin-button").style.display = "block";
+}
 function signin(){
   const email = document.getElementById('email').value;
   if(validate_email(email)){
@@ -104,14 +129,8 @@ window.onclick = function(event) {
 
 
 
-// function showOtpInput() {
-//     document.getElementById("otp").style.display = "block";
-//     document.getElementById("getotp").style.display = "none";
-//     document.getElementById("signin-button").style.display = "block";
 
-
-
-//     //otp 
+    //otp 
 
 
 // }

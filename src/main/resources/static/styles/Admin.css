@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  background-color: #34495e;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar h1 {
+  color: #ecf0f1;
+  font-size: 1.2em;
+}
+
+h3 {
+  padding-left: 50px;
+  padding-top: 50px;
+  color:  #34495e;
+}
+
+.input {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 20px; /* Adjust spacing between items */
+  margin: 50px 20px; /* Adjust margin for better responsiveness */
+}
+
+.left-input,
+.right-input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+input,
+select {
+  height: 40px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  width: 60%; /* Make input and select full-width */
+}
+
+button {
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 50px;
+  border-style: solid;
+  color: #ffffff;
+  background-color: #34495e;
+  border-width: 1px;
+  border-radius: 5px;
+  width: 60%;
+}
+
+/* Style the select container */
+.right-input select {
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  background-color: #fff;
+  width: 70%; 
+}
+
+/* Style the custom dropdown arrow */
+.right-input select::after {
+  content: '\25BC'; 
+  font-size: 14px; 
+  color: #34495e; 
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+/* Style the options inside the dropdown */
+.right-input select option {
+  padding: 10px; 
+  background-color: #fff; 
+}
+
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  background-color: #34495e;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar h1 {
+  color: #ecf0f1;
+  font-size: 1.2em;
+}
+
+h3 {
+  padding-left: 50px;
+  padding-top: 50px;
+  color:  #34495e;
+}
+
+.input {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 20px; /* Adjust spacing between items */
+  margin: 50px 20px; /* Adjust margin for better responsiveness */
+}
+
+.left-input,
+.right-input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+input,
+select,
+button {
+  height: 40px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  width: 60%; /* Make input, select, and button full-width */
+}
+
+/* Media Queries for Tablet and Mobile */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar h1 {
+    margin-top: 15px;
+  }
+
+  .input {
+    flex-direction: column; /* Change flex direction to column */
+    margin: 20px; /* Adjust margin for better spacing */
+  }
+
+  .left-input,
+  .right-input {
+    width: 100%; /* Make both sections full-width */
+    margin-left: 0; /* Remove left margin */
+  }
+}
+

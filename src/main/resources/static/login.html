@@ -7,7 +7,6 @@
     <!-- <link rel="stylesheet" href="styles/login.css">
     <script src="scripts/login.js"></script> -->
     <link rel="stylesheet" href="styles/login.css">
-    <script src="scripts/login.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -27,10 +26,10 @@
                 <form action="/register" method="post">
                     <div class="input-box">
                         <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="off">
-                        <!-- <button type="button" class="submit-button" id="getotp" onclick="showOtpInput()">Get OTP</button>
-                        <input type="text" name="otp" id="otp" style="display: none;" placeholder="Enter OTP"> -->
-                        <button type="submit" class="signin-button" id="signin-button" onclick="signin()">Sign In</button>
-                    </div> 
+                        <button type="button" class="submit-button" id="getotp" onclick="showOtpInput()">Get OTP</button>
+                        <input type="text" name="otp" id="otp" style="display: none;" placeholder="Enter OTP">
+                        <button type="submit" class="signin-button" id="signin-button" style="display: none;" onclick="signin()">Sign In</button>
+                    </div>
                 </form>
         </div>
     </div>
@@ -42,5 +41,6 @@
             <p>Please Enter College Email ID.</p>
         </div>
     </div>
+    <script src="scripts/login.js"></script>
 </body>
 </html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DormCare</title>
+  <link rel="stylesheet" href="styles/Admin.css">
+  <script src="scripts/Admin.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1>DormCare</h1>
+    <!-- <div class="button">
+        <button type="button" class="loginbutton" id="loginbutton">Login</button>
+    </div> -->
+    <p id="emp"></p>
+</nav>
+<h3>Add User</h3>
+<div class="input">
+  <div class="left-input">
+    <input type="text" name="ename" id="ename" placeholder="Employee Name" autocomplete="off">
+    <input type="text" name="number" id="number" placeholder="Phone Number" autocomplete="off">
+    <input type="text" name="eid" id="eid" placeholder="Employee ID" autocomplete="off">
+  </div>
+  <div class="right-input">
+    <select class="role" id="RoleDropdown">
+      <option value="default"  selected>Select Role</option>
+      
+    </select>
+    <select class="block" id="blockDropdown">
+      <option value="default"  selected>Select Block</option>
+      
+    </select>
+  </div>
+  </div>
+</div>
+<button type="submit">Add User</button>
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-container">
+                <span onclick="closeModal()" class="w3-button w3-display-topright">&times;</span>
+                <p id="Error-display1"></p>
+                <p id="Error-display2"></p>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+    </div>
+  </div>
+</body>
+</html>

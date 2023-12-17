@@ -22,19 +22,18 @@
     margin-right: 10px; /* Reduced margin-right for responsiveness */
 }
 
-.loginbutton {
+/* .loginbutton {
     height: 30px;
     width: 100px;
     border: 1px solid #ecf0f1;
     color: #ecf0f1;
     background-color: #2c3e50;
     border-radius: 5px;
-}
+} */
 
 .main {
     font-size: 30px;
     background-color: #ecf0f1;
-    height: 500px;
     text-align: center;
     color: #2c3e50;
     padding-top: 40px;
@@ -47,9 +46,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     color: #2c3e50;
-    margin-top: -170px;
+    margin-top: 50px;
 }
 
 .services h1 {
@@ -71,21 +69,68 @@
     color: #2c3e50;
 }
 
+/* Card Styles */
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 25%;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+.card img {
+    max-width: 100%;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.card-text {
+    margin-top: 10px;
+    font-size: 0.7em;
+    margin-left: 50px;
+}
+
+.arrow-button {
+    background-color: #34495e;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
 /* Media query for screens with a maximum width of 768px (tablets) */
 @media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Change to column for tablets */
+        align-items:start;
+    }
+
+    .navbar h1 {
+        margin-top: 15px; /* Adjusted margin-top for responsiveness */
+    }
+
     .button {
-        margin-left: 10px;
+        margin-left: 0;
         display: flex;
         flex-direction: row;
         margin-bottom: 15px; /* Reduced margin-bottom for responsiveness */
     }
 
-    p {
-        font-size: 15px;
-    }
-
     .main {
-        margin-top: 30px; /* Adjusted margin-top for responsiveness */
+        margin-top: 0px; /* Adjusted margin-top for responsiveness */
         font-size: 20px;
     }
 
@@ -97,7 +142,7 @@
     .services h1 {
         font-size: 20px;
         text-align: center;
-        margin-top: 80px; /* Adjusted margin-top for responsiveness */
+        margin-top: -20px; /* Adjusted margin-top for responsiveness */
     }
 
     .services ul {
@@ -110,13 +155,17 @@
         font-size: 14px; /* Adjusted font-size for responsiveness */
         margin-right: 15px;
     }
+
+    .card {
+        width: 55%; /* Make cards full width on tablets */
+    }
 }
 
 /* Media query for screens with a maximum width of 480px (mobile devices) */
 @media screen and (max-width: 480px) {
     .navbar {
-        flex-direction: row;
-        /* align-items: center; */
+        flex-direction: column; /* Change to column for mobile devices */
+        align-items: center;
     }
 
     .navbar h1 {
@@ -124,7 +173,7 @@
     }
 
     .button {
-        margin-left: 220px;
+        margin-left: 0;
         margin-top: 10px; /* Adjusted margin-top for responsiveness */
     }
 
@@ -142,7 +191,7 @@
     .services h1 {
         font-size: 17px;
         text-align: center;
-        margin-top: 80px; /* Adjusted margin-top for responsiveness */
+        margin-top: 30px; /* Adjusted margin-top for responsiveness */
     }
 
     .services ul {
@@ -151,14 +200,12 @@
     }
 
     li {
-        list-style:none;
+        list-style: none;
         font-size: 12px; /* Adjusted font-size for responsiveness */
         margin-right: 15px;
     }
-}
 
-@media screen and (min-width: 769px) {
-    .start {
-        display: none;
+    .card {
+        width: 55%; /* Make cards full width on tablets */
     }
 }
